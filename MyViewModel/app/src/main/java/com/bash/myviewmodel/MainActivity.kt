@@ -2,31 +2,59 @@ package com.bash.myviewmodel
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.Editable
-import android.text.TextWatcher
-import android.widget.Toast
+import android.util.Log
+import android.view.View
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.loopj.android.http.AsyncHttpClient
+import com.loopj.android.http.AsyncHttpResponseHandler
+import cz.msebera.android.httpclient.Header
 import kotlinx.android.synthetic.main.activity_main.*
+import org.json.JSONObject
+import java.text.DecimalFormat
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var adapter: WeatherAdapter
+    private lateinit var mainViewModel: MainViewModel
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        setMyButtonEnable()
 
-        my_edit_text.addTextChangedListener(object : TextWatcher {
-            override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {
-            }
-            override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
-                setMyButtonEnable()
-            }
-            override fun afterTextChanged(s: Editable) {
+        adapter = WeatherAdapter()
+        adapter.notifyDataSetChanged()
+
+        recyclerView.layoutManager = LinearLayoutManager(this)
+        recyclerView.adapter = adapter
+
+        mainViewModel = ViewModelProvider(this, ViewModelProvider.NewInstanceFactory()).get(MainViewModel::class.java)
+
+        btnCity.setOnClickListener{
+            val city = editCity.text.toString()
+            if(city.isEmpty()) return@setOnClickListener
+            showLoading(true)
+
+            mainViewModel.setWeather(city)
+        }
+
+        mainViewModel.getWeathers().observe(this, Observer { weatherItems ->
+            if(weatherItems != null){
+                adapter.setData(weatherItems)
+                showLoading(false)
+            }else{
+                showLoading(false)
             }
         })
-        my_button.setOnClickListener { Toast.makeText(this@MainActivity, my_edit_text.text, Toast.LENGTH_SHORT).show() }
     }
 
-    private fun setMyButtonEnable(){
-        val result = my_edit_text.text
-        my_button.isEnabled = result != null && result.toString().isNotEmpty()
+    private fun showLoading(state: Boolean){
+        if(state){
+            progressBar.visibility = View.VISIBLE
+        }else{
+            progressBar.visibility = View.GONE
+        }
     }
+
 }
