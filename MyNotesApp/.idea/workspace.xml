@@ -7,19 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2745d385-bee4-458a-8e34-b84c88ea3e0f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/dicoding/picodiploma/mynotesapp/ExampleInstrumentedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/bash/mynotesapp/ExampleInstrumentedTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/dicoding/picodiploma/mynotesapp/CustomOnItemClickListener.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/bash/mynotesapp/CustomOnItemClickListener.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/dicoding/picodiploma/mynotesapp/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/bash/mynotesapp/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/dicoding/picodiploma/mynotesapp/NoteAddUpdateActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/bash/mynotesapp/NoteAddUpdateActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/dicoding/picodiploma/mynotesapp/adapter/NoteAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/bash/mynotesapp/adapter/NoteAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/dicoding/picodiploma/mynotesapp/db/DatabaseContract.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/bash/mynotesapp/db/DatabaseContract.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/dicoding/picodiploma/mynotesapp/db/DatabaseHelper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/bash/mynotesapp/db/DatabaseHelper.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/dicoding/picodiploma/mynotesapp/db/NoteHelper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/bash/mynotesapp/db/NoteHelper.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/dicoding/picodiploma/mynotesapp/entity/Note.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/bash/mynotesapp/entity/Note.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/dicoding/picodiploma/mynotesapp/helper/MappingHelper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/bash/mynotesapp/helper/MappingHelper.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/dicoding/picodiploma/mynotesapp/ExampleUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/bash/mynotesapp/ExampleUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,8 +42,8 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../HelloWorld" />
+    <property name="settings.editor.selected.configurable" value="preferences.language.Kotlin" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -142,5 +132,17 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="713" y="421" width="494" height="244" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1920.1080@0.0.1920.1080" timestamp="1600448718241" />
+    <state x="466" y="142" width="424" height="491" key="FileChooserDialogImpl" timestamp="1600522007002">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="466" y="142" width="424" height="491" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1600522007002" />
+    <state x="449" y="175" width="1022" height="737" key="SettingsEditor" timestamp="1600449104852">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="449" y="175" width="1022" height="737" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1600449104852" />
+    <state x="339" y="211" key="com.intellij.ide.util.TipDialog" timestamp="1600521996490">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="339" y="211" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1600521996490" />
   </component>
 </project>
